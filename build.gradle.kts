@@ -22,6 +22,8 @@ intellij {
     //    type.set("IC") // Target IDE Platform
 
     plugins.set(listOf(/* Plugin Dependencies */))
+    // 移除最高版本限制
+    updateSinceUntilBuild.set(true)
 }
 
 tasks {
@@ -43,8 +45,7 @@ tasks {
     }
 
     patchPluginXml {
-        sinceBuild.set("232")
-        untilBuild.set("242.*")
+        sinceBuild.set("193.0")
     }
 
     signPlugin {
